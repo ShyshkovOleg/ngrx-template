@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { DrawDirective } from './shared/directives/draw.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DrawDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

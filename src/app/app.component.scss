@@ -1,0 +1,28 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    display: flex;
+    padding: 12px;
+  }
+  &__img-container {
+    height: 512px;
+    width: 512px;
+    border: 1px dotted grey;
+  }
+  canvas {
+    border: 1px dotted grey;
+    margin-left: 12px;
+  }
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+}
