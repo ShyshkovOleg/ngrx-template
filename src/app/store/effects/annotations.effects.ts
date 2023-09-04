@@ -20,7 +20,6 @@ export class AnnotationsEffects {
 
   loadImageAndAnnotations$ = createEffect(() => this.actions$.pipe(
     ofType(DrawImageAndAnnotationsButtonClicked),
-    tap(() => console.log('Effect triggered')),
     mergeMap(() => merge(
       this.http.getImage().pipe(
         map((data: string) => ImageActions.loadImageSuccess({ data })),
